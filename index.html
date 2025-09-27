@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-circle">
+                    <span class="logo-text">REVO</span>
+                </div>
+            </div>
+            <nav class="navigation">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#profile" class="nav-item">Our Profile</a>
+                <a href="#portfolio" class="nav-item">Portfolio</a>
+                <a href="#contact" class="nav-item">Message Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1>Hi Salman Ilyas Alfarizi, Welcome To Website</h1>
+                <p>Ini adalah website latihan pertama</p>
+                <div class="hero-content">
+                    <div class="counter">
+                        <img src="Me.jpg" alt="">
+                    </div>
+                    <div class="personal-info-hero">
+                        <h2>About Me</h2>
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <h3>Personal Information</h3>
+                                <p><strong>Full Name:</strong> Salman Ilyas Alfarizi</p>
+                                <p><strong>Date of Birth:</strong> January 16, 2009</p>
+                                <p><strong>Age:</strong> 16 years old</p>
+                                <p><strong>Gender:</strong> Male</p>
+                                <p><strong>Nationality:</strong> Indonesian</p>
+                                <p><strong>Location:</strong> Garut, Indonesia</p>
+                            </div>
+
+                            <div class="info-card">
+                                <h3>Education</h3>
+                                <p><strong>Current Level:</strong> High School Student</p>
+                                <p><strong>School:</strong> SMK Wikrama 1 Garut</p>
+                                <p><strong>Major:</strong> Game and Software Development</p>
+                                <p><strong>Status:</strong> Learning to create websites</p>
+                            </div>
+
+                            <div class="info-card">
+                                <h3>Skills & Interests</h3>
+                                <p><strong>Programming:</strong> HTML, CSS, JavaScript (Beginner)</p>
+                                <p><strong>Web Development:</strong> Learning frontend development</p>
+                                <p><strong>Hobbies:</strong> Coding, Gaming, Reading tech articles</p>
+                                <p><strong>Goals:</strong> Become a Software Engineer web developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="profile" class="profile-section">
+            <div class="container">
+                <h2>Our Headquarter</h2>
+                <div class="locations">
+                    <div class="location-item">
+                        <div class="location-circle"></div>
+                        <p>Jakarta</p>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-circle"></div>
+                        <p>Bandung</p>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-circle"></div>
+                        <p>Surabaya</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Message Us</h2>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="messageForm">
+                            <div class="form-group">
+                                <label for="nama">Nama :</label>
+                                <input type="text" id="nama" name="nama" placeholder="Nama">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email" placeholder="Email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tanggal">Tanggal Lahir :</label>
+                                <input type="date" id="tanggal" name="tanggal">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Jenis Kelamin :</label>
+                                <div class="radio-group">
+                                    <input type="radio" id="laki" name="jenis_kelamin" value="Laki-Laki">
+                                    <label for="laki">Laki-Laki</label>
+                                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                                    <label for="perempuan">Perempuan</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pesan">Pesan :</label>
+                                <textarea id="pesan" name="pesan" placeholder="Pesan"></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-output">
+                        <div class="current-time">
+                            Current time : <span id="currentTime">Fri Jun 17 2022 11:27:28 GMT+0100</span>
+                        </div>
+                        <div class="output-box">
+                            <div class="output-content">
+                                <p><strong>Nama :</strong> <span id="outputNama">Salman Ilyas Alfarizi</span></p>
+                                <p><strong>Email :</strong> <span id="outputEmail">-</span></p>
+                                <p><strong>Tanggal Lahir :</strong> <span id="outputTanggal">01/16/2009</span></p>
+                                <p><strong>Jenis Kelamin :</strong> <span id="outputKelamin">Laki - Laki</span></p>
+                                <p><strong>Pesan :</strong> <span id="outputPesan">Lagi Belajar buat Website</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Created By Salman Ilyas Alfarizi</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
